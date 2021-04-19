@@ -1,8 +1,10 @@
 let Distancia = 0
+let Linieota = 0
 let httpsldpcicnmgithubiomenudocachodeprolanderitoguayqueesunpro = 0
 irRemote.connectInfrared(DigitalPin.P16)
 basic.forever(function () {
     httpsldpcicnmgithubiomenudocachodeprolanderitoguayqueesunpro = irRemote.returnIrButton()
+    Linieota = k_Bit.LineTracking()
     Distancia = k_Bit.ultra()
 })
 basic.forever(function () {
@@ -27,8 +29,8 @@ basic.forever(function () {
         k_Bit.run(DIR.RunBack, 67)
     } else if (httpsldpcicnmgithubiomenudocachodeprolanderitoguayqueesunpro == 25) {
         if (httpsldpcicnmgithubiomenudocachodeprolanderitoguayqueesunpro > 15) {
-            while (true) {
-            	
+            while (Linieota == 0) {
+                k_Bit.run(DIR.RunForward, 50)
             }
         } else {
         	
