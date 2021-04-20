@@ -22,11 +22,32 @@ basic.forever(function () {
     } else if (httpsldpcicnmgithubiomenudocachodeprolanderitoguayqueesunpro == 64) {
     	
     } else if (httpsldpcicnmgithubiomenudocachodeprolanderitoguayqueesunpro == 67) {
+        basic.showLeds(`
+            . . . # .
+            . . # . .
+            . # # # #
+            . . # . .
+            . . . # .
+            `)
         k_Bit.run(DIR.TurnRight, 50)
     } else if (httpsldpcicnmgithubiomenudocachodeprolanderitoguayqueesunpro == 68) {
+        basic.showLeds(`
+            . # . . .
+            . . # . .
+            # # # # .
+            . . # . .
+            . # . . .
+            `)
         k_Bit.run(DIR.TurnLeft, 50)
     } else if (httpsldpcicnmgithubiomenudocachodeprolanderitoguayqueesunpro == 21) {
         k_Bit.run(DIR.RunBack, 67)
+        basic.showLeds(`
+            . . # . .
+            # . # . #
+            . # # # .
+            . . # . .
+            . . . . .
+            `)
     } else if (httpsldpcicnmgithubiomenudocachodeprolanderitoguayqueesunpro == 25) {
         if (httpsldpcicnmgithubiomenudocachodeprolanderitoguayqueesunpro > 15) {
             while (Linieota == 0) {
