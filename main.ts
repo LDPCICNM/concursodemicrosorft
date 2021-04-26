@@ -1,9 +1,9 @@
-let Distancia = 0
 let Linieota = 0
+let Distancia = 0
 let Guay = 0
 irRemote.connectInfrared(DigitalPin.P16)
 basic.forever(function () {
-    if (Guay < 15) {
+    if (Guay < 15 && Distancia != 0) {
         k_Bit.carStop()
     } else {
         if (Guay == 70) {
