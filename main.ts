@@ -1,9 +1,14 @@
-let Linieota = 0
 let Distancia = 0
+let Linieota = 0
 let Guay = 0
 irRemote.connectInfrared(DigitalPin.P16)
 basic.forever(function () {
-    if (Guay < 15 && Distancia != 0) {
+    Guay = irRemote.returnIrButton()
+    Linieota = k_Bit.LineTracking()
+    Distancia = k_Bit.ultra()
+})
+basic.forever(function () {
+    if (Distancia < 15 && Distancia != 0) {
         k_Bit.carStop()
     } else {
         if (Guay == 70) {
@@ -18,9 +23,4 @@ basic.forever(function () {
             k_Bit.run(DIR.RunBack, 67)
         }
     }
-})
-basic.forever(function () {
-    Guay = irRemote.returnIrButton()
-    Linieota = k_Bit.LineTracking()
-    Distancia = k_Bit.ultra()
 })
