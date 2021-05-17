@@ -1,3 +1,4 @@
+let Giro = 0
 let Distancia = 0
 let Linieota = 0
 let Guay = 0
@@ -21,6 +22,14 @@ basic.forever(function () {
             k_Bit.run(DIR.TurnLeft, 50)
         } else if (Guay == 21) {
             k_Bit.run(DIR.RunBack, 67)
+        }
+        if (Guay == 22) {
+            Giro = 0
+            if (true) {
+            	
+            } else {
+            	
+            }
         }
     }
 })
